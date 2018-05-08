@@ -1,3 +1,89 @@
+    <header>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="https://bitlisten.cash/images/logo.png" width="180">
+          <!-- <strong>BitListen.Cash</strong> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-settings-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <span class="text-successNO">{{ localState.current_price | currency }} &nbsp;</span>
+        </span>
+        <form class="form-inline my-2 my-md-0">
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-cogs"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+      <!-- <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="https://bitlisten.cash/images/logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div> -->
+    </header>
+
+    <main role="main">
+
+      <div id="wrapper">
+        <div id="background-wrap">
+          <div class="bubble x1"><div class="txt">10,000 BCH</div></div>
+          <div class="bubble x2"><div class="txt">10 BCH</div></div>
+          <div class="bubble x3"><div class="txt">2.9 BCH</div></div>
+          <div class="bubble x4"><div class="txt">0.9 BCH</div></div>
+          <div class="bubble x5"><div class="txt">3,292 BCH</div></div>
+          <div class="bubble x6"><div class="txt">4.19 BCH</div></div>
+          <div class="bubble x7"><div class="txt">0.001 BCH</div></div>
+          <div class="bubble x8"><div class="txt">0.0002 BCH</div></div>
+          <div class="bubble x9"><div class="txt">1.23 BCH</div></div>
+          <div class="bubble x10"><div class="txt">1.992 BCH</div></div>
+        </div>
+      </div>
+
+      
+
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Some modal app is here!!!  GREAT!
+
+            <pre>this.localState = {{ localState | json }}</pre>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </main>
+
+
+
+<!--
 <div>
   <h1 x-large class="sample-content">Your Content Here</h1>
 
@@ -29,9 +115,10 @@
         we can use Angular's [(ngModel)] syntax
         <input type="text" name="textInput" [(ngModel)]="localState.value" autofocus>
       -->
-
+<!--
     <pre>this.localState = {{ localState | json }}</pre>
 
   </div>
 
 </div>
+-->
